@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.75e3c46b.css",
-    "main.js": "/my-portfolio/static/js/main.91d03180.js",
+    "main.js": "/my-portfolio/static/js/main.0e2af8c2.js",
     "static/js/415.4d6acbeb.chunk.js": "/my-portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/my-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/myrpg.png": "/my-portfolio/static/media/myrpg.f1b52b7fbb9406f3427c.png",
@@ -19,8 +19,11 @@
     "static/media/emailspoofing.png": "/my-portfolio/static/media/emailspoofing.73c90c7318b3c5610df8.png",
     "static/media/home-main.svg": "/my-portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/my-portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/tagpaw.png": "/my-portfolio/static/media/tagpaw.4065992a8e478148edc7.png",
     "static/media/dashboard.png": "/my-portfolio/static/media/dashboard.7e2d914b53691d9fc067.png",
+    "static/media/discord-bot-advanced.png": "/my-portfolio/static/media/discord-bot-advanced.271ba649859c6c3e4377.png",
     "static/media/CV_Freelance_Gabriel_Gonta.pdf.pdf": "/my-portfolio/static/media/CV_Freelance_Gabriel_Gonta.pdf.cece018a4df36b5573ca.pdf",
+    "static/media/discord-bot-community.png": "/my-portfolio/static/media/discord-bot-community.deb77595d06845e33a27.png",
     "static/media/video-match.png": "/my-portfolio/static/media/video-match.dfd14cc0697807a7b1f8.png",
     "static/media/blog.png": "/my-portfolio/static/media/blog.3283e2bc62b2c205d091.png",
     "static/media/logo.png": "/my-portfolio/static/media/logo.719e3e72cf51e2b95965.png",
@@ -31,12 +34,12 @@
     "static/media/pre.svg": "/my-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/my-portfolio/index.html",
     "main.75e3c46b.css.map": "/my-portfolio/static/css/main.75e3c46b.css.map",
-    "main.91d03180.js.map": "/my-portfolio/static/js/main.91d03180.js.map",
+    "main.0e2af8c2.js.map": "/my-portfolio/static/js/main.0e2af8c2.js.map",
     "415.4d6acbeb.chunk.js.map": "/my-portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/my-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75e3c46b.css",
-    "static/js/main.91d03180.js"
+    "static/js/main.0e2af8c2.js"
   ]
 }
