@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.75e3c46b.css",
-    "main.js": "/my-portfolio/static/js/main.17ced601.js",
-    "static/js/415.4d6acbeb.chunk.js": "/my-portfolio/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/my-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/my-portfolio/static/css/main.57e9b906.css",
+    "main.js": "/my-portfolio/static/js/main.777b8428.js",
+    "static/js/108.1df154f4.chunk.js": "/my-portfolio/static/js/108.1df154f4.chunk.js",
+    "static/js/27.2163fce8.chunk.js": "/my-portfolio/static/js/27.2163fce8.chunk.js",
     "static/media/myrpg.png": "/my-portfolio/static/media/myrpg.f1b52b7fbb9406f3427c.png",
     "static/media/myradar.png": "/my-portfolio/static/media/myradar.c5a26d50c3f2ed7c8fcf.png",
     "static/media/password.png": "/my-portfolio/static/media/password.e43d1846bfafaa0710a6.png",
@@ -32,14 +32,10 @@
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/avatar.svg": "/my-portfolio/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
     "static/media/pre.svg": "/my-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
-    "index.html": "/my-portfolio/index.html",
-    "main.75e3c46b.css.map": "/my-portfolio/static/css/main.75e3c46b.css.map",
-    "main.17ced601.js.map": "/my-portfolio/static/js/main.17ced601.js.map",
-    "415.4d6acbeb.chunk.js.map": "/my-portfolio/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/my-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "index.html": "/my-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.75e3c46b.css",
-    "static/js/main.17ced601.js"
+    "static/css/main.57e9b906.css",
+    "static/js/main.777b8428.js"
   ]
 }
