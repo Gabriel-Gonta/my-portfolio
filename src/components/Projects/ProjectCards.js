@@ -6,7 +6,7 @@ import { TbApi } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import { FaClock } from "react-icons/fa";
 import { FaReact, FaNodeJs, FaPython, FaCss3Alt, FaHtml5, FaPhp, FaDocker, FaSwift, FaVuejs } from "react-icons/fa";
-import { SiC, SiMysql, SiCplusplus, SiVite, SiAngular, SiFirebase, SiShell, SiTailwindcss, SiCypress, SiKalilinux, SiTypescript, SiSocketdotio } from "react-icons/si"; // Import additional icons
+import { SiC, SiMysql, SiCplusplus, SiVite, SiAngular, SiFirebase, SiShell, SiTailwindcss, SiCypress, SiKalilinux, SiTypescript, SiSocketdotio, SiDiscord } from "react-icons/si"; // Import additional icons
 
 function ProjectCards(props) {
   return (
@@ -17,34 +17,45 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "15px" }}>
+          <Button variant="primary" href={props.ghLink} target="_blank" style={{ borderRadius: "8px" }}>
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )}
 
-        {/* Button to display the number of hours spent on the project */}
-        <Button
-          variant="primary"
-          href={props.demoLink}
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          <FaClock /> &nbsp; {props.hours} Hours
-        </Button>
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ borderRadius: "8px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button>
+          )}
+
+          {!props.isBlog && props.demoLink2 && (
+            <Button
+              variant="primary"
+              href={props.demoLink2}
+              target="_blank"
+              style={{ borderRadius: "8px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"App"}
+            </Button>
+          )}
+
+          {/* Button to display the number of hours spent on the project */}
+          <Button
+            variant="outline-primary"
+            disabled
+            style={{ cursor: "default", borderRadius: "8px", borderColor: "#623686", color: "#c770f0" }}
+          >
+            <FaClock /> &nbsp; {props.hours} Hours
+          </Button>
+        </div>
 
         {/* Display icons for used technologies */}
         <div style={{ marginTop: "10px" }}>
@@ -113,6 +124,9 @@ function ProjectCards(props) {
           )}
           {props.technologies.includes("Socket") && (
             <SiSocketdotio style={{ marginRight: "10px", color: "#FFFFFF" }} size={30} />
+          )}
+          {props.technologies.includes("Discord") && (
+            <SiDiscord style={{ marginRight: "10px", color: "#5865F2" }} size={30} />
           )}
         </div>
       </Card.Body>

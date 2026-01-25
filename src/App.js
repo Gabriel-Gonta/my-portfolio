@@ -10,7 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Redirect from "./utile/redirect";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate

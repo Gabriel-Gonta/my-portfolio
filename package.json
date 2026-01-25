@@ -23,10 +23,11 @@
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://gabrielgonta.com",
+  "homepage": "https://Gabriel-Gonta.github.io/my-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node scripts/copy-404.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

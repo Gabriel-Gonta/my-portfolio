@@ -20,6 +20,9 @@ import myHotelBooker from "../../Assets/Projects/myhotelbooker.png";
 import myRPG from "../../Assets/Projects/myrpg.png";
 import myRadar from "../../Assets/Projects/myradar.png";
 import hashinCPP from "../../Assets/Projects/hashingcpp.png";
+import tagpaw from "../../Assets/Projects/tagpaw.png";
+import discordBotAdvanced from "../../Assets/Projects/discord-bot-advanced.png";
+import discordBotCommunity from "../../Assets/Projects/discord-bot-community.png";
 
 function Projects() {
   return (
@@ -33,6 +36,59 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tagpaw}
+              isBlog={false}
+              title="TagPaw - Fullstack Pet Management"
+              description="A comprehensive fullstack web application for managing pets and animals. Features include user authentication, pet profiles, medical records, appointment scheduling, and a complete admin dashboard. Built with modern technologies for scalability and performance."
+              ghLink="https://github.com/Gabriel-Gonta/tagpaw"
+              demoLink="https://tagpaw.fr"
+              demoLink2="https://app.tagpaw.fr/login"
+              hours="450"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={discordBotAdvanced}
+              isBlog={false}
+              title="Advanced Discord Bot - Fullstack"
+              description="A feature-rich Discord bot with web dashboard, user management, custom commands, moderation tools, music player, and real-time notifications. Includes a full admin panel for server configuration and analytics."
+              ghLink="https://github.com/Gabriel-Gonta"
+              hours="380"
+              technologies={["Node.js",
+                "Discord",
+                "React",
+                "Typescript",
+                "API",
+                "Socket"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={discordBotCommunity}
+              isBlog={false}
+              title="Discord Community Bot - Fullstack"
+              description="A comprehensive Discord bot solution for community management with automated moderation, role management, welcome systems, leveling, economy, and integrated web dashboard for server owners."
+              ghLink="https://github.com/Gabriel-Gonta"
+              hours="320"
+              technologies={["Node.js",
+                "Discord",
+                "React",
+                "Python",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
