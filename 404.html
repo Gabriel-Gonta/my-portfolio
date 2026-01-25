@@ -52,7 +52,7 @@
     // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
     // This way the code will only replace the route part and not the real directory.
     // For example, '/thedogcatcher' will become '/?/thedogcatcher' and not '/thedogcatcher/?/thedogcatcher'
-    var pathSegmentsToKeep = 0;
+    var pathSegmentsToKeep = 1;
 
     var l = window.location;
     l.replace(
