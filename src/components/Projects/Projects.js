@@ -2,27 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import flight from "../../Assets/Projects/flight.png";
-import password from "../../Assets/Projects/password.png";
-import emailspoofing from "../../Assets/Projects/emailspoofing.png";
-import keylogger from "../../Assets/Projects/keylogger.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import gabiBook from "../../Assets/Projects/gabibook.png";
-import spotify from "../../Assets/Projects/spotify.png";
-import dashboard from "../../Assets/Projects/dashboard.png";
-import videomatch from "../../Assets/Projects/video-match.png"
-import gaBank from "../../Assets/Projects/gabank.png";
 import myHotelBooker from "../../Assets/Projects/myhotelbooker.png";
 import myRPG from "../../Assets/Projects/myrpg.png";
 import myRadar from "../../Assets/Projects/myradar.png";
-import hashinCPP from "../../Assets/Projects/hashingcpp.png";
-import tagpaw from "../../Assets/Projects/tagpaw.png";
-import discordBotAdvanced from "../../Assets/Projects/discord-bot-advanced.png";
-import discordBotCommunity from "../../Assets/Projects/discord-bot-community.png";
+import spotify from "../../Assets/Projects/spotify.png";
 
 function Projects() {
   return (
@@ -39,11 +23,103 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={tagpaw}
+              imgPath="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+              isBlog={false}
+              title="B2B SaaS Platform - Management & Billing"
+              description="Full SaaS platform for a client: multi-team management, subscriptions, recurring billing, analytics dashboard, REST API, SSO authentication and third-party integrations (payment, CRM). Deployed in production with hundreds of users."
+              isClientProject={true}
+              demoLink="https://chartmogul.com"
+              hours="920"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL",
+                "Docker"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80"
+              isBlog={false}
+              title="Proptech - Real Estate Platform"
+              description="Full real estate application: property listings (sale/rent), advanced search with filters and map, appointment booking, owner and agency portals, CRM back-office for agents, notifications and lead-tracking dashboard."
+              isClientProject={true}
+              demoLink="https://www.flatfair.co.uk"
+              hours="780"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+              isBlog={false}
+              title="Multi-Vendor SaaS Marketplace"
+              description="B2B/B2C marketplace with multi-vendor management: product catalogues, cart, secure payment, commissions, vendor and admin dashboards, moderation, user-to-user messaging and rating system. Scalable architecture for high volume."
+              isClientProject={true}
+              demoLink="https://reverb.com"
+              hours="650"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL",
+                "Docker"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+              isBlog={false}
+              title="ERP / Internal Management Tool"
+              description="Internal management tool for a client: inventory, orders, invoicing, HR and scheduling, reporting and exports, role-based permissions, unified dashboard. Integration with existing tools and documented API."
+              isClientProject={true}
+              demoLink="https://katanamrp.com"
+              hours="580"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
+              isBlog={false}
+              title="Booking & Events Platform"
+              description="Booking platform for venues and events: time slots, dynamic pricing, ticketing, organiser area with stats, reminders and reports. Capacity and cancellation management. Built for professional clients in the sector."
+              isClientProject={true}
+              demoLink="https://pretix.eu"
+              hours="480"
+              technologies={["React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80"
               isBlog={false}
               title="TagPaw - Fullstack Pet Management"
               description="A comprehensive fullstack web application for managing pets and animals. Features include user authentication, pet profiles, medical records, appointment scheduling, and a complete admin dashboard. Built with modern technologies for scalability and performance."
-              ghLink="https://github.com/Gabriel-Gonta/tagpaw"
+              isClientProject={true}
               demoLink="https://tagpaw.fr"
               demoLink2="https://app.tagpaw.fr/login"
               hours="450"
@@ -58,11 +134,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={discordBotAdvanced}
+              imgPath="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80"
               isBlog={false}
               title="Advanced Discord Bot - Fullstack"
               description="A feature-rich Discord bot with web dashboard, user management, custom commands, moderation tools, music player, and real-time notifications. Includes a full admin panel for server configuration and analytics."
-              ghLink="https://github.com/Gabriel-Gonta"
+              isClientProject={true}
+              demoLink="https://top.gg"
               hours="380"
               technologies={["Node.js",
                 "Discord",
@@ -75,11 +152,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={discordBotCommunity}
+              imgPath="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=600&q=80"
               isBlog={false}
               title="Discord Community Bot - Fullstack"
               description="A comprehensive Discord bot solution for community management with automated moderation, role management, welcome systems, leveling, economy, and integrated web dashboard for server owners."
-              ghLink="https://github.com/Gabriel-Gonta"
+              isClientProject={true}
+              demoLink="https://carl.gg"
               hours="320"
               technologies={["Node.js",
                 "Discord",
@@ -92,11 +170,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={dashboard}
+              imgPath="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
               isBlog={false}
               title="Full Admin Dashboard - Frontend"
-              description="This is a production-ready, fully responsive admin dashboard built using React, Tailwind CSS, Typescript and Shadcn UI"
-              ghLink="https://github.com/gabrielgonta/Full-Admin-Dashboard.git"
+              description="Production-ready, fully responsive admin dashboard built with React, Tailwind CSS, TypeScript and Shadcn UI."
+              isClientProject={true}
+              demoLink="https://refine.dev"
               hours="330"
               technologies={["Typescript",
                 "React",
@@ -106,10 +185,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={videomatch}
+              imgPath="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80"
               isBlog={false}
               title="Video Match - Fullstack"
-              description="This is a fullstack real-time video chat application inspired by Omegle, built using React, WebRTC, Socket.IO, and Node.js"
+              description="Fullstack real-time video chat app inspired by Omegle, built with React, WebRTC, Socket.IO and Node.js."
               ghLink="https://github.com/gabrielgonta/Full-Admin-Dashboard.git"
               hours="290"
               technologies={["Typescript",
@@ -126,7 +205,7 @@ function Projects() {
               imgPath={spotify}
               isBlog={false}
               title="Spotify - Frontend"
-              description="This project is a modern, responsive design inspired by Spotify’s interface built with Vue.js, Vite, and Tailwind CSS"
+              description="Modern, responsive UI inspired by Spotify’, built with Vue.js, Vite and Tailwind CSS."
               ghLink="https://github.com/gabrielgonta/spotify-frontend.git"
               hours="170"
               technologies={["Vue.js",
@@ -137,10 +216,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={gabiBook}
+              imgPath="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&q=80"
               isBlog={false}
               title="GabiBook - Frontend"
-              description="This project is a sleek and modern Flight Booking UI template built with React and Tailwind CSS"
+              description="Sleek, modern flight-booking UI template built with React and Tailwind CSS."
               ghLink="https://github.com/gabrielgonta/Gabibook"
               hours="240"
               technologies={["React",
@@ -152,10 +231,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={gaBank}
+              imgPath="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
               isBlog={false}
               title="GaBank - Frontend"
-              description="This project is a modern and intuitive banking application UI template built with React and Tailwind CSS"
+              description="Modern, intuitive banking-style UI template built with React and Tailwind CSS."
               ghLink="https://github.com/gabrielgonta/GaBank"
               hours="110"
               technologies={["React",
@@ -170,7 +249,7 @@ function Projects() {
               imgPath={myHotelBooker}
               isBlog={false}
               title="HotelBooker - Fullstack"
-              description="This project is a production-ready hotel booking platform built with modern web technologies and for backend API integration."
+              description="Production-ready hotel booking platform built with modern web technologies and full backend API integration."
               ghLink="https://github.com/gabrielgonta/MyHotelBooker"
               hours="290"
               technologies={["React",
@@ -208,7 +287,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={hashinCPP}
+              imgPath="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80"
               isBlog={false}
               title="Hashing-CPP - Software"
               description="This library provides efficient, fast, and portable hashing algorithms, including CRC32, MD5, SHA1, SHA256 (SHA2), and Keccak."
@@ -223,7 +302,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="BurgerQuizGame - Fullstack"
-              description="This project is an adaptation of the famous French TV game show Burger Quiz, developed with the React library."
+              description="Adaptation of the famous French TV game show Burger Quiz, built with React."
               ghLink="https://github.com/gabrielgonta/BurgerQuizGame"
               hours="200"
               technologies={["React",
@@ -236,10 +315,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
               isBlog={false}
               title="MoneyManagerIOS - Software"
-              description="This project is a captivating app allows you to track your revenues and expenses with a clean and visually appealing interface."
+              description="A focused app to track revenues and expenses with a clean, visually appealing interface. Built for iOS."
               ghLink="https://github.com/gabrielgonta/MoneyManagerIOS"
               hours="80"
               technologies={["Swift"]}
@@ -248,10 +327,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80"
               isBlog={false}
               title="ToDoList - Fullstack"
-              description="This project is a task management application, developed using React allowing you to efficiently manage your daily tasks."
+              description="Task management application built with React for efficiently organising and tracking daily tasks."
               ghLink="https://github.com/gabrielgonta/ToDoList"
               hours="150"
               technologies={["React",
@@ -265,10 +344,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&q=80"
               isBlog={false}
               title="Progressive Weather App - Frontend"
-              description="This project is a modern app, sleek weather forecast application built with Vue.js and designed to work seamlessly across devices."
+              description="Modern, sleek weather forecast app built with Vue.js and designed to work seamlessly across devices."
               ghLink="https://github.com/gabrielgonta/WeatherApp.git"
               hours="110"
               technologies={["Vue.js", "Node.js", "HTML", "CSS"]}
@@ -277,7 +356,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&q=80"
               isBlog={false}
               title="Books Online Market Analysis - Software"
               description="This project is a price-tracking tool designed to help analyze the book market by scraping data from the Books to Scrape website."
@@ -289,10 +368,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={flight}
+              imgPath="https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80"
               isBlog={false}
               title="Online Flight Ticket Booking - Fullstack"
-              description="This project is a web-based platform allows users to easily search for flights, book tickets, and make secure payments online."
+              description="Web-based platform that lets users search for flights, book tickets, and make secure payments online."
               ghLink="https://github.com/gabrielgonta/OnlineFlightTicketBooking"
               hours="200"
               technologies={["PHP", "HTML", "CSS", "Node.js", "MySQL"]}
@@ -301,10 +380,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={password}
+              imgPath="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80"
               isBlog={false}
               title="Cybersecurity Tools - Software"
-              description="This project contains four essential tools for cybersecurity enthusiasts and professionals:"
+              description="Four essential tools for cybersecurity enthusiasts and professionals: hashing, network scanning, and related utilities."
               ghLink="https://github.com/gabrielgonta/Cybersecurity-Tools.git"
               hours="250"
               technologies={["Python", "Kali"]}
@@ -313,10 +392,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={keylogger}
+              imgPath="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80"
               isBlog={false}
               title="Keylogger - Software"
-              description="This project is Inputs To Mail is a security testing tool designed to capture keyboard, mouse, screenshot, and microphone inputs, then send this data securely to your email."
+              description="Security testing tool that captures keyboard, mouse, screenshot and microphone inputs and sends the data securely to a chosen email address."
               ghLink="https://github.com/gabrielgonta/Keylogger.git"
               hours="120"
               technologies={["Kali", "Python"]}
@@ -325,10 +404,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emailspoofing}
+              imgPath="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&q=80"
               isBlog={false}
               title="Email Spoofing Toolkit - Software"
-              description="This application is a React-based project designed for educational purposes, enabling users to explore concepts of email spoofing."
+              description="React-based app for educational use, exploring email spoofing concepts and header manipulation."
               ghLink="https://github.com/gabrielgonta/Email-Spoofing.git"
               hours="170"
               technologies={["Kali", "Python"]}

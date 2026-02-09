@@ -18,10 +18,18 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "15px" }}>
-          <Button variant="primary" href={props.ghLink} target="_blank" style={{ borderRadius: "8px" }}>
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank" style={{ borderRadius: "8px" }}>
+              <BsGithub /> &nbsp;
+              {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+          )}
+
+          {props.isClientProject && (
+            <Button variant="outline-secondary" disabled style={{ borderRadius: "8px", cursor: "default" }}>
+              Projet client
+            </Button>
+          )}
 
           {!props.isBlog && props.demoLink && (
             <Button

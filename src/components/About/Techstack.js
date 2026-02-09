@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejs, DiPython, DiPhp, DiJqueryLogo, DiAngularSimple, DiSwift, DiTerminal } from "react-icons/di";
 import { TbBrandGolang } from "react-icons/tb";
-import { SiC, SiVite, SiCplusplus, SiTailwindcss, SiPowershell, SiCypress, SiVuedotjs, SiMysql, SiBootstrap, SiTypescript, SiSocketdotio } from "react-icons/si";
+import { SiC, SiVite, SiCplusplus, SiTailwindcss, SiPowershell, SiCypress, SiVuedotjs, SiMysql, SiBootstrap, SiTypescript, SiSocketdotio, SiFirebase, SiMongodb, SiGraphql, SiJest, SiRedis, SiExpress } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -20,10 +20,16 @@ function Techstack() {
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVuedotjs />
@@ -47,6 +53,18 @@ function Techstack() {
         <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRedis />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGraphql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiJqueryLogo />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -65,13 +83,13 @@ function Techstack() {
         <SiCypress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiJest />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiPowershell />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSocketdotio />

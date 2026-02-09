@@ -18,60 +18,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm a passionate <b className="purple">Fullstack Developer</b> with a strong interest in
-              <b className="purple"> mobile & web technologies</b> and <b className="purple">
-                <a className="purple" href="https://fr.wikipedia.org/wiki/Cybersécurité" target="_blank" rel="noreferrer">
-                  cybersecurity
-                </a>
-              </b>.
-              I love building modern, secure, and user-friendly applications that solve real-world problems.
+              I'm a passionate <span className="purple">Fullstack Developer</span> with a strong interest in <span className="purple">mobile & web technologies</span> and <span className="purple">cybersecurity</span>. I love building modern, secure, and user-friendly applications that solve real-world problems.
               <br />
               <br />
-              I’m fluent in technologies such as&nbsp;
-              <i>
-                <b className="purple">
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Programmation_web" target="_blank" rel="noreferrer">HTML/CSS</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" rel="noreferrer"> JavaScript</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/React" target="_blank" rel="noreferrer"> React</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Node.js" target="_blank" rel="noreferrer"> Node.js</a>, 
-                  and <a className="purple" href="https://fr.wikipedia.org/wiki/SQL" target="_blank" rel="noreferrer">SQL</a>.
-                </b>
-              </i>
+              I’m fluent in technologies such as <span className="purple">HTML/CSS</span>, <span className="purple">JavaScript</span>, <span className="purple">React</span>, <span className="purple">Node.js</span>, and <span className="purple">SQL</span>.
               <br />
               <br />
-              I also enjoy coding in systems and scripting languages like&nbsp;
-              <i>
-                <b className="purple">
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank" rel="noreferrer">C</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank" rel="noreferrer"> Python</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Go_(langage)" target="_blank" rel="noreferrer"> Go</a>, 
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)" target="_blank" rel="noreferrer"> Swift</a>, 
-                  and <a className="purple" href="https://fr.wikipedia.org/wiki/Langage_de_requête" target="_blank" rel="noreferrer">Dataquery</a>.
-                </b>
-              </i>
+              I also enjoy coding in systems and scripting languages like <span className="purple">C</span>, <span className="purple">Python</span>, <span className="purple">Go</span>, <span className="purple">Swift</span>, and <span className="purple">Dataquery</span>.
               <br />
               <br />
-              My main focus is on constantly learning new tools and languages, while improving my
-              <i>
-                <b className="purple">
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/Cybersécurité" target="_blank" rel="noreferrer"> cybersecurity</a>
-                </b>
-              </i>
-              &nbsp;skills and staying up to date with tech industry standards.
+              My main focus is on constantly learning new tools and languages, while improving my <span className="purple">cybersecurity</span> skills and staying up to date with tech industry standards.
               <br />
               <br />
-              Whenever possible, I dedicate my time to building new projects and MVPs using
-              <i>
-                <b className="purple"> modern web frameworks </b>
-              </i>
-              like&nbsp;
-              <i>
-                <b className="purple">
-                  <a className="purple" href="https://fr.wikipedia.org/wiki/React" target="_blank" rel="noreferrer">React.js</a>, 
-                  <a className="purple" href="https://en.wikipedia.org/wiki/Vue.js" target="_blank" rel="noreferrer"> Vue.js</a>, 
-                  and <a className="purple" href="https://fr.wikipedia.org/wiki/Angular" target="_blank" rel="noreferrer">Angular</a>.
-                </b>
-              </i>
+              Whenever possible, I dedicate my time to building new projects and MVPs using modern web frameworks like <span className="purple">React.js</span>, <span className="purple">Vue.js</span>, and <span className="purple">Angular</span>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

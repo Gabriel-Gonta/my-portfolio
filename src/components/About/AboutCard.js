@@ -11,7 +11,7 @@ function AboutCard() {
             Hello, I'm <span className="purple">Gabriel Gonta</span>, a passionate <span className="purple">Fullstack Developer</span> and <span className="purple">Cybersecurity</span> enthusiast from <span className="purple">Nice, France</span>.
             <br />
             <br />
-            I'm currently pursuing a degree in <b>Cybersecurity</b> at <b>CyberUniversity</b>, where I continuously deepen my expertise in system security, network protection, ethical hacking, and secure application development. This academic journey complements my hands-on experience in building secure, scalable web applications.
+            I'm currently pursuing a degree in <b>Cybersecurity</b> at <b>Sorbonne University</b>, where I continuously deepen my expertise in system security, network protection, ethical hacking, and secure application development. This academic journey complements my hands-on experience in building secure, scalable web applications.
             <br />
             <br />
             As an entrepreneur, I'm the founder and CEO of two innovative ventures:
