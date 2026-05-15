@@ -6,7 +6,7 @@ import { TbApi } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import { FaClock } from "react-icons/fa";
 import { FaReact, FaNodeJs, FaPython, FaCss3Alt, FaHtml5, FaPhp, FaDocker, FaSwift, FaVuejs } from "react-icons/fa";
-import { SiC, SiMysql, SiCplusplus, SiVite, SiAngular, SiFirebase, SiShell, SiTailwindcss, SiCypress, SiKalilinux, SiTypescript, SiSocketdotio, SiDiscord } from "react-icons/si"; // Import additional icons
+import { SiC, SiMysql, SiCplusplus, SiVite, SiAngular, SiFirebase, SiShell, SiTailwindcss, SiCypress, SiKalilinux, SiTypescript, SiSocketdotio, SiDiscord, SiLaravel, SiNextdotjs, SiPostgresql, SiRedis } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -135,6 +135,18 @@ function ProjectCards(props) {
           )}
           {props.technologies.includes("Discord") && (
             <SiDiscord style={{ marginRight: "10px", color: "#5865F2" }} size={30} />
+          )}
+          {props.technologies.includes("Laravel") && (
+            <SiLaravel style={{ marginRight: "10px", color: "#FF2D20" }} size={30} />
+          )}
+          {props.technologies.includes("Next.js") && (
+            <SiNextdotjs style={{ marginRight: "10px", color: "#ffffff" }} size={30} />
+          )}
+          {props.technologies.includes("PostgreSQL") && (
+            <SiPostgresql style={{ marginRight: "10px", color: "#336791" }} size={30} />
+          )}
+          {props.technologies.includes("Redis") && (
+            <SiRedis style={{ marginRight: "10px", color: "#DC382D" }} size={30} />
           )}
         </div>
       </Card.Body>

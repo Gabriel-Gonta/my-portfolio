@@ -1,45 +1,52 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-// Read the built index.html
-const indexPath = path.join(__dirname, '../build/index.html');
-const html404Path = path.join(__dirname, '../build/404.html');
-const redirectJsPath = path.join(__dirname, '../public/404-redirect.js');
-const buildRedirectJsPath = path.join(__dirname, '../build/404-redirect.js');
+const indexPath = path.join(__dirname, "../build/index.html");
+const html404Path = path.join(__dirname, "../build/404.html");
+const packageJsonPath = path.join(__dirname, "../package.json");
+const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
+const homepage = packageJson.homepage || "";
 
-// Read package.json to get homepage
-const packageJsonPath = path.join(__dirname, '../package.json');
-const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-const homepage = packageJson.homepage || '';
-
-// Extract the base path from homepage (e.g., /my-portfolio from https://user.github.io/my-portfolio)
-let basePath = '';
+let basePath = "/my-portfolio/";
 if (homepage) {
   try {
     const url = new URL(homepage);
     basePath = url.pathname;
-    if (basePath && !basePath.endsWith('/')) {
-      basePath += '/';
+    if (!basePath.endsWith("/")) {
+      basePath += "/";
     }
   } catch (e) {
-    // If homepage is just a path
-    basePath = homepage.startsWith('/') ? homepage : '/' + homepage;
-    if (!basePath.endsWith('/')) {
-      basePath += '/';
+    basePath = homepage.startsWith("/") ? homepage : `/${homepage}`;
+    if (!basePath.endsWith("/")) {
+      basePath += "/";
     }
   }
 }
 
+const repoPath = basePath.replace(/\/$/, "");
+const hashRedirectScript = `
+  <script>
+    (function () {
+      var repo = "${repoPath}";
+      var path = window.location.pathname;
+      if (path.indexOf(repo) === 0) {
+        path = path.slice(repo.length);
+      }
+      path = path.replace(/^\\//, "");
+      if (path && path !== "index.html" && !window.location.hash) {
+        window.location.replace(
+          repo + "/#/" + path + window.location.search + window.location.hash
+        );
+      }
+    })();
+  </script>`;
+
 if (fs.existsSync(indexPath)) {
-  let indexContent = fs.readFileSync(indexPath, 'utf8');
-  
-  // With HashRouter, we don't need the redirect script anymore
-  // Just copy index.html to 404.html as-is
-  
-  // Write to 404.html
-  fs.writeFileSync(html404Path, indexContent, 'utf8');
-  console.log('✓ Created 404.html from index.html');
+  let indexContent = fs.readFileSync(indexPath, "utf8");
+  indexContent = indexContent.replace("</body>", `${hashRedirectScript}</body>`);
+  fs.writeFileSync(html404Path, indexContent, "utf8");
+  console.log("✓ Created 404.html with HashRouter redirect");
 } else {
-  console.error('✗ index.html not found in build folder');
+  console.error("✗ index.html not found in build folder");
   process.exit(1);
 }

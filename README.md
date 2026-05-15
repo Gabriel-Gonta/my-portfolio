@@ -32,4 +32,4 @@ This portfolio was built using:
 
 ## Authors
 
-* **Gabriel Gonta** - *Initial work* - [Portfolio](https://github.com/gabrielgonta/my-portfolio )
+* **Gabriel Gonta** - *Initial work* - [Portfolio](https://github.com/Gabriel-Gonta/my-portfolio )

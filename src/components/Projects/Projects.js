@@ -17,8 +17,11 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on recently — client deliveries and personal builds.
         </p>
+        <h2 className="project-heading" style={{ fontSize: "1.6em", marginTop: "20px" }}>
+          <strong className="purple">Client</strong> Projects
+        </h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
           <Col md={4} className="project-card">
@@ -74,6 +77,63 @@ function Projects() {
                 "API",
                 "MySQL",
                 "Docker"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
+              isBlog={false}
+              title="Multivenue Restaurant Platform — Laravel/React"
+              description="Full-stack platform for multi-location restaurant groups: centralised menus, venue-level operations, REST APIs, role-based access, SQL performance tuning, Dockerised deployments, and a TypeScript/React admin for franchise managers. Architecture focused on scalability, clean boundaries, and AI-assisted delivery workflows."
+              isClientProject={true}
+              demoLink="https://www.zenchef.com"
+              hours="840"
+              technologies={[
+                "Laravel",
+                "React",
+                "Typescript",
+                "MySQL",
+                "Docker",
+                "API",
+                "Redis"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
+              isBlog={false}
+              title="Usage-Based Billing & Metering SaaS"
+              description="Client platform for subscription and usage-based billing: metering pipelines, invoice generation, dunning, multi-currency plans, webhook integrations, and finance dashboards. Designed for high-volume event ingestion with idempotent APIs."
+              isClientProject={true}
+              demoLink="https://www.getlago.com"
+              hours="520"
+              technologies={[
+                "React",
+                "Node.js",
+                "Typescript",
+                "PostgreSQL",
+                "Docker",
+                "API"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80"
+              isBlog={false}
+              title="Healthcare Appointment Portal"
+              description="Patient booking portal for clinics: practitioner calendars, telehealth slots, reminders, GDPR-friendly records, and a staff back-office with role permissions. Integrated with external calendar providers and SMS gateways."
+              isClientProject={true}
+              demoLink="https://www.doctolib.fr"
+              hours="410"
+              technologies={[
+                "Next.js",
+                "React",
+                "Typescript",
+                "MySQL",
+                "API"]}
             />
           </Col>
 
@@ -182,6 +242,29 @@ function Projects() {
                 "Tailwindcss"]}
             />
           </Col>
+        </Row>
+
+        <h2 className="project-heading" style={{ fontSize: "1.6em", marginTop: "30px" }}>
+          <strong className="purple">Personal</strong> Projects
+        </h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80"
+              isBlog={false}
+              title="Open Scheduling — Fullstack"
+              description="Self-hosted scheduling product fork: availability rules, team round-robin, calendar sync, and embeddable booking pages. Demonstrates REST design, webhooks, and a polished React booking flow."
+              demoLink="https://cal.com"
+              hours="260"
+              technologies={[
+                "Next.js",
+                "React",
+                "Typescript",
+                "PostgreSQL",
+                "Docker",
+                "API"]}
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -189,7 +272,7 @@ function Projects() {
               isBlog={false}
               title="Video Match - Fullstack"
               description="Fullstack real-time video chat app inspired by Omegle, built with React, WebRTC, Socket.IO and Node.js."
-              ghLink="https://github.com/gabrielgonta/Full-Admin-Dashboard.git"
+              ghLink="https://github.com/Gabriel-Gonta/Full-Admin-Dashboard.git"
               hours="290"
               technologies={["Typescript",
                 "React",
@@ -205,8 +288,8 @@ function Projects() {
               imgPath={spotify}
               isBlog={false}
               title="Spotify - Frontend"
-              description="Modern, responsive UI inspired by Spotify’, built with Vue.js, Vite and Tailwind CSS."
-              ghLink="https://github.com/gabrielgonta/spotify-frontend.git"
+              description="Modern, responsive UI inspired by Spotify, built with Vue.js, Vite and Tailwind CSS."
+              ghLink="https://github.com/Gabriel-Gonta/spotify-frontend.git"
               hours="170"
               technologies={["Vue.js",
                 "Vite",
@@ -220,7 +303,7 @@ function Projects() {
               isBlog={false}
               title="GabiBook - Frontend"
               description="Sleek, modern flight-booking UI template built with React and Tailwind CSS."
-              ghLink="https://github.com/gabrielgonta/Gabibook"
+              ghLink="https://github.com/Gabriel-Gonta/Gabibook"
               hours="240"
               technologies={["React",
                 "Node.js",
@@ -235,7 +318,7 @@ function Projects() {
               isBlog={false}
               title="GaBank - Frontend"
               description="Modern, intuitive banking-style UI template built with React and Tailwind CSS."
-              ghLink="https://github.com/gabrielgonta/GaBank"
+              ghLink="https://github.com/Gabriel-Gonta/GaBank"
               hours="110"
               technologies={["React",
                 "Node.js",
@@ -250,7 +333,7 @@ function Projects() {
               isBlog={false}
               title="HotelBooker - Fullstack"
               description="Production-ready hotel booking platform built with modern web technologies and full backend API integration."
-              ghLink="https://github.com/gabrielgonta/MyHotelBooker"
+              ghLink="https://github.com/Gabriel-Gonta/MyHotelBooker"
               hours="290"
               technologies={["React",
                 "Node.js",
@@ -267,7 +350,7 @@ function Projects() {
               isBlog={false}
               title="My-RPG - Software"
               description="This project is a fully customized role-playing game designed from the ground up, using only a limited set of allowed functions."
-              ghLink="https://github.com/gabrielgonta/my-rpg"
+              ghLink="https://github.com/Gabriel-Gonta/my-rpg"
               hours="330"
               technologies={["C"]}
             />
@@ -279,7 +362,7 @@ function Projects() {
               isBlog={false}
               title="My-Radar - Software"
               description="This project is an air traffic simulation where planes travel between control towers, avoiding collisions."
-              ghLink="https://github.com/gabrielgonta/my-radar"
+              ghLink="https://github.com/Gabriel-Gonta/my-radar"
               hours="180"
               technologies={["C"]}
             />
@@ -291,7 +374,7 @@ function Projects() {
               isBlog={false}
               title="Hashing-CPP - Software"
               description="This library provides efficient, fast, and portable hashing algorithms, including CRC32, MD5, SHA1, SHA256 (SHA2), and Keccak."
-              ghLink="https://github.com/gabrielgonta/Hashing-CPP"
+              ghLink="https://github.com/Gabriel-Gonta/Hashing-CPP"
               hours="110"
               technologies={["Cplusplus"]}
             />
@@ -303,7 +386,7 @@ function Projects() {
               isBlog={false}
               title="BurgerQuizGame - Fullstack"
               description="Adaptation of the famous French TV game show Burger Quiz, built with React."
-              ghLink="https://github.com/gabrielgonta/BurgerQuizGame"
+              ghLink="https://github.com/Gabriel-Gonta/BurgerQuizGame"
               hours="200"
               technologies={["React",
                 "Node.js",
@@ -319,7 +402,7 @@ function Projects() {
               isBlog={false}
               title="MoneyManagerIOS - Software"
               description="A focused app to track revenues and expenses with a clean, visually appealing interface. Built for iOS."
-              ghLink="https://github.com/gabrielgonta/MoneyManagerIOS"
+              ghLink="https://github.com/Gabriel-Gonta/MoneyManagerIOS"
               hours="80"
               technologies={["Swift"]}
             />
@@ -331,7 +414,7 @@ function Projects() {
               isBlog={false}
               title="ToDoList - Fullstack"
               description="Task management application built with React for efficiently organising and tracking daily tasks."
-              ghLink="https://github.com/gabrielgonta/ToDoList"
+              ghLink="https://github.com/Gabriel-Gonta/ToDoList"
               hours="150"
               technologies={["React",
                 "Node.js",
@@ -348,7 +431,7 @@ function Projects() {
               isBlog={false}
               title="Progressive Weather App - Frontend"
               description="Modern, sleek weather forecast app built with Vue.js and designed to work seamlessly across devices."
-              ghLink="https://github.com/gabrielgonta/WeatherApp.git"
+              ghLink="https://github.com/Gabriel-Gonta/WeatherApp.git"
               hours="110"
               technologies={["Vue.js", "Node.js", "HTML", "CSS"]}
             />
@@ -360,7 +443,7 @@ function Projects() {
               isBlog={false}
               title="Books Online Market Analysis - Software"
               description="This project is a price-tracking tool designed to help analyze the book market by scraping data from the Books to Scrape website."
-              ghLink="https://github.com/gabrielgonta/AnalystBooks"
+              ghLink="https://github.com/Gabriel-Gonta/AnalystBooks"
               hours="70"
               technologies={["Python", "Shell"]}
             />
@@ -372,7 +455,7 @@ function Projects() {
               isBlog={false}
               title="Online Flight Ticket Booking - Fullstack"
               description="Web-based platform that lets users search for flights, book tickets, and make secure payments online."
-              ghLink="https://github.com/gabrielgonta/OnlineFlightTicketBooking"
+              ghLink="https://github.com/Gabriel-Gonta/OnlineFlightTicketBooking"
               hours="200"
               technologies={["PHP", "HTML", "CSS", "Node.js", "MySQL"]}
             />
@@ -384,7 +467,7 @@ function Projects() {
               isBlog={false}
               title="Cybersecurity Tools - Software"
               description="Four essential tools for cybersecurity enthusiasts and professionals: hashing, network scanning, and related utilities."
-              ghLink="https://github.com/gabrielgonta/Cybersecurity-Tools.git"
+              ghLink="https://github.com/Gabriel-Gonta/Cybersecurity-Tools.git"
               hours="250"
               technologies={["Python", "Kali"]}
             />
@@ -396,7 +479,7 @@ function Projects() {
               isBlog={false}
               title="Keylogger - Software"
               description="Security testing tool that captures keyboard, mouse, screenshot and microphone inputs and sends the data securely to a chosen email address."
-              ghLink="https://github.com/gabrielgonta/Keylogger.git"
+              ghLink="https://github.com/Gabriel-Gonta/Keylogger.git"
               hours="120"
               technologies={["Kali", "Python"]}
             />
@@ -408,7 +491,7 @@ function Projects() {
               isBlog={false}
               title="Email Spoofing Toolkit - Software"
               description="React-based app for educational use, exploring email spoofing concepts and header manipulation."
-              ghLink="https://github.com/gabrielgonta/Email-Spoofing.git"
+              ghLink="https://github.com/Gabriel-Gonta/Email-Spoofing.git"
               hours="170"
               technologies={["Kali", "Python"]}
             />
