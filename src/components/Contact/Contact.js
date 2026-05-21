@@ -1,32 +1,43 @@
 import React, { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+
+const EMAILJS_SERVICE_ID = "service_7x979ov";
+const EMAILJS_TEMPLATE_ID = "template_m41sgho";
+const EMAILJS_PUBLIC_KEY = "fVcg_Y7ZzNliC3pTv";
 
 function Contact() {
   const form = useRef();
   const [status, setStatus] = useState("");
+  const [sending, setSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true);
+    setStatus("");
 
     emailjs
       .sendForm(
-        "service_7x979ov",       // Ton ID EmailJS
-        "template_m41sgho",      // Ton Template ID
-        e.target,
-        "fVcg_Y7ZzNliC3pTv"      // Ton Public Key
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        form.current,
+        { publicKey: EMAILJS_PUBLIC_KEY }
       )
       .then(
         () => {
           setStatus("Message envoyé avec succès !");
           form.current.reset();
         },
-        () => {
-          setStatus("Erreur lors de l'envoi du message. Veuillez réessayer.");
+        (error) => {
+          console.error("EmailJS error:", error);
+          setStatus(
+            "Impossible d'envoyer le message (erreur EmailJS). Vérifiez la configuration du service ou contactez-moi par e-mail : gonta.gabriel.pro@gmail.com"
+          );
         }
-      );
+      )
+      .finally(() => setSending(false));
   };
 
   return (
@@ -61,8 +72,8 @@ function Contact() {
             required
             className="contact-textarea"
           />
-          <button type="submit" className="contact-button">
-            Envoyer
+          <button type="submit" className="contact-button" disabled={sending}>
+            {sending ? "Envoi en cours..." : "Envoyer"}
           </button>
           {status && <p className="contact-status">{status}</p>}
         </form>

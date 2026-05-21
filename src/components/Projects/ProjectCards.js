@@ -31,6 +31,12 @@ function ProjectCards(props) {
             </Button>
           )}
 
+          {props.isBusinessProject && (
+            <Button variant="outline-secondary" disabled style={{ borderRadius: "8px", cursor: "default" }}>
+              Business project
+            </Button>
+          )}
+
           {!props.isBlog && props.demoLink && (
             <Button
               variant="primary"
