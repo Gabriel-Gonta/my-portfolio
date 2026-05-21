@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-const indexPath = path.join(__dirname, "../build/index.html");
 const html404Path = path.join(__dirname, "../build/404.html");
 const packageJsonPath = path.join(__dirname, "../package.json");
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
@@ -24,7 +23,18 @@ if (homepage) {
 }
 
 const repoPath = basePath.replace(/\/$/, "");
-const hashRedirectScript = `
+
+// Minimal 404: no React bundle. Otherwise missing .js chunks receive HTML
+// and Safari throws: SyntaxError: Unexpected token '{'.
+const minimal404 = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0;url=${basePath}" />
+</head>
+<body>
   <script>
     (function () {
       var repo = "${repoPath}";
@@ -33,20 +43,20 @@ const hashRedirectScript = `
         path = path.slice(repo.length);
       }
       path = path.replace(/^\\//, "");
-      if (path && path !== "index.html" && !window.location.hash) {
+      var isAsset = /\\.(js|css|png|jpe?g|gif|svg|ico|json|map|woff2?|ttf|pdf|webp)$/i.test(path);
+      if (path && path !== "index.html" && !isAsset && !window.location.hash) {
         window.location.replace(
           repo + "/#/" + path + window.location.search + window.location.hash
         );
+      } else if (!isAsset) {
+        window.location.replace(repo + "/");
       }
     })();
-  </script>`;
+  </script>
+  <p>Redirecting… <a href="${basePath}">Continue to portfolio</a></p>
+</body>
+</html>
+`;
 
-if (fs.existsSync(indexPath)) {
-  let indexContent = fs.readFileSync(indexPath, "utf8");
-  indexContent = indexContent.replace("</body>", `${hashRedirectScript}</body>`);
-  fs.writeFileSync(html404Path, indexContent, "utf8");
-  console.log("✓ Created 404.html with HashRouter redirect");
-} else {
-  console.error("✗ index.html not found in build folder");
-  process.exit(1);
-}
+fs.writeFileSync(html404Path, minimal404, "utf8");
+console.log("✓ Created minimal 404.html (SPA redirect only, no JS bundle)");

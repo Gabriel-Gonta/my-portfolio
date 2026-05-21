@@ -1,41 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.57e9b906.css",
-    "main.js": "/my-portfolio/static/js/main.5f7458ed.js",
+    "main.css": "/my-portfolio/static/css/main.37d7664d.css",
+    "main.js": "/my-portfolio/static/js/main.6fcad75f.js",
     "static/js/108.1df154f4.chunk.js": "/my-portfolio/static/js/108.1df154f4.chunk.js",
     "static/js/27.2163fce8.chunk.js": "/my-portfolio/static/js/27.2163fce8.chunk.js",
     "static/media/myrpg.png": "/my-portfolio/static/media/myrpg.f1b52b7fbb9406f3427c.png",
     "static/media/myradar.png": "/my-portfolio/static/media/myradar.c5a26d50c3f2ed7c8fcf.png",
-    "static/media/password.png": "/my-portfolio/static/media/password.e43d1846bfafaa0710a6.png",
     "static/media/spotify.png": "/my-portfolio/static/media/spotify.80e3c85d30a8aa81c7d3.png",
-    "static/media/gabank.png": "/my-portfolio/static/media/gabank.c9d7788047fd4597179f.png",
-    "static/media/keylogger.png": "/my-portfolio/static/media/keylogger.38ad59e3edc355a81294.png",
-    "static/media/gabibook.png": "/my-portfolio/static/media/gabibook.5478f37540f2222192e6.png",
     "static/media/myhotelbooker.png": "/my-portfolio/static/media/myhotelbooker.4ac4b878a67e49d37dee.png",
-    "static/media/emotion.png": "/my-portfolio/static/media/emotion.fce87fb9054cb3f28d73.png",
-    "static/media/leaf.png": "/my-portfolio/static/media/leaf.97567e83e9a4d568b44c.png",
-    "static/media/hashingcpp.png": "/my-portfolio/static/media/hashingcpp.05a3d819ca78961f6934.png",
     "static/media/chatify.png": "/my-portfolio/static/media/chatify.b5fe61e485412cbf859e.png",
-    "static/media/emailspoofing.png": "/my-portfolio/static/media/emailspoofing.73c90c7318b3c5610df8.png",
     "static/media/home-main.svg": "/my-portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/my-portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/tagpaw.png": "/my-portfolio/static/media/tagpaw.4065992a8e478148edc7.png",
-    "static/media/dashboard.png": "/my-portfolio/static/media/dashboard.7e2d914b53691d9fc067.png",
-    "static/media/discord-bot-advanced.png": "/my-portfolio/static/media/discord-bot-advanced.271ba649859c6c3e4377.png",
     "static/media/CV_Freelance_Gabriel_Gonta.pdf.pdf": "/my-portfolio/static/media/CV_Freelance_Gabriel_Gonta.pdf.cece018a4df36b5573ca.pdf",
-    "static/media/discord-bot-community.png": "/my-portfolio/static/media/discord-bot-community.deb77595d06845e33a27.png",
-    "static/media/video-match.png": "/my-portfolio/static/media/video-match.dfd14cc0697807a7b1f8.png",
-    "static/media/blog.png": "/my-portfolio/static/media/blog.3283e2bc62b2c205d091.png",
     "static/media/logo.png": "/my-portfolio/static/media/logo.719e3e72cf51e2b95965.png",
-    "static/media/codeEditor.png": "/my-portfolio/static/media/codeEditor.7119ff93b30e806f5b5d.png",
-    "static/media/flight.png": "/my-portfolio/static/media/flight.2e8a18401e1fb1647152.png",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/avatar.svg": "/my-portfolio/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
     "static/media/pre.svg": "/my-portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/my-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.57e9b906.css",
-    "static/js/main.5f7458ed.js"
+    "static/css/main.37d7664d.css",
+    "static/js/main.6fcad75f.js"
   ]
 }

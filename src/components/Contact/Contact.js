@@ -1,60 +1,51 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
-const EMAILJS_SERVICE_ID = "service_7x979ov";
-const EMAILJS_TEMPLATE_ID = "template_m41sgho";
-const EMAILJS_PUBLIC_KEY = "fVcg_Y7ZzNliC3pTv";
+const CONTACT_EMAIL = "gonta.gabriel.pro@gmail.com";
+const FORM_SUBMIT_URL = `https://formsubmit.co/${CONTACT_EMAIL}`;
+const REDIRECT_URL =
+  "https://gabriel-gonta.github.io/my-portfolio/?contact=sent#/contact";
 
 function Contact() {
-  const form = useRef();
   const [status, setStatus] = useState("");
-  const [sending, setSending] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setSending(true);
-    setStatus("");
-
-    emailjs
-      .sendForm(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        form.current,
-        { publicKey: EMAILJS_PUBLIC_KEY }
-      )
-      .then(
-        () => {
-          setStatus("Message envoyé avec succès !");
-          form.current.reset();
-        },
-        (error) => {
-          console.error("EmailJS error:", error);
-          setStatus(
-            "Impossible d'envoyer le message (erreur EmailJS). Vérifiez la configuration du service ou contactez-moi par e-mail : gonta.gabriel.pro@gmail.com"
-          );
-        }
-      )
-      .finally(() => setSending(false));
-  };
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("contact") === "sent") {
+      setStatus("Message envoyé avec succès !");
+      window.history.replaceState(
+        {},
+        document.title,
+        `${window.location.pathname}#/contact`
+      );
+    }
+  }, []);
 
   return (
     <Container fluid className="contact-section-wrapper">
       <Container className="contact-container">
         <h2 className="contact-title">Contactez-moi</h2>
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <form
+          action={FORM_SUBMIT_URL}
+          method="POST"
+          className="contact-form"
+        >
+          <input type="hidden" name="_subject" value="Nouveau message — Portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value={REDIRECT_URL} />
           <input
             type="text"
-            name="user_name"
+            name="name"
             placeholder="Nom"
             required
             className="contact-input"
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="Email"
             required
             className="contact-input"
@@ -72,11 +63,17 @@ function Contact() {
             required
             className="contact-textarea"
           />
-          <button type="submit" className="contact-button" disabled={sending}>
-            {sending ? "Envoi en cours..." : "Envoyer"}
+          <button type="submit" className="contact-button">
+            Envoyer
           </button>
           {status && <p className="contact-status">{status}</p>}
         </form>
+        <p style={{ color: "#a588c0", marginTop: "16px", fontSize: "0.9rem" }}>
+          Ou écrivez-moi directement :{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: "#c770f0" }}>
+            {CONTACT_EMAIL}
+          </a>
+        </p>
       </Container>
       <Particle />
     </Container>
