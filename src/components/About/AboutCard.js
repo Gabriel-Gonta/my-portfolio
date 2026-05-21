@@ -14,13 +14,16 @@ function AboutCard() {
             I'm currently pursuing a degree in <b>Cybersecurity</b> at <b>Sorbonne University</b>, where I continuously deepen my expertise in system security, network protection, ethical hacking, and secure application development. This academic journey complements my hands-on experience in building secure, scalable web applications.
             <br />
             <br />
-            As an entrepreneur, I'm the founder and CEO of two innovative ventures:
+            As an entrepreneur, I'm the founder and CEO of three innovative ventures:
             <br />
             <br />
-            <strong style={{ color: "#c770f0" }}>• <a className="purple" target="_blank" rel="noreferrer" href="https://skaneat.com" style={{ textDecoration: "none" }}>SkanEat</a></strong> - A comprehensive web application designed to modernize and enhance the customer experience in restaurants, bars, and cafés, streamlining operations and improving service quality.
+            <strong style={{ color: "#c770f0" }}>• <a className="purple" target="_blank" rel="noreferrer" href="https://skaneat.com" style={{ textDecoration: "none" }}>SkanEat</a></strong> - Digital ordering platform for restaurants: QR Code menus, real-time tracking, integrated payments, and staff dashboards to modernize hospitality operations.
             <br />
             <br />
-            <strong style={{ color: "#c770f0" }}>• <a className="purple" target="_blank" rel="noreferrer" href="https://skaldas.com" style={{ textDecoration: "none" }}>Skaldas</a></strong> - An innovative platform delivering cutting-edge solutions and services in the digital space.
+            <strong style={{ color: "#c770f0" }}>• <a className="purple" target="_blank" rel="noreferrer" href="https://skaldas.com" style={{ textDecoration: "none" }}>Skaldas</a></strong> - Hospitality suite with Skaldas Welcome (digital guest guides for rentals) and Skaldas CleanTrack (housekeeping management for hotels).
+            <br />
+            <br />
+            <strong style={{ color: "#c770f0" }}>• <a className="purple" target="_blank" rel="noreferrer" href="https://valydr.com" style={{ textDecoration: "none" }}>Valydr</a></strong> - White-label buyer qualification SaaS for real estate agents, with Tracfin compliance, branded PDF dossiers, and legal audit traceability.
             <br />
             <br />
             My technical expertise spans across modern web technologies, with a strong focus on building fullstack applications using React, Node.js, Vue.js, and various backend frameworks. I specialize in creating real-time applications, RESTful APIs, and secure authentication systems. I'm also passionate about developing Discord bots and integrating complex systems.

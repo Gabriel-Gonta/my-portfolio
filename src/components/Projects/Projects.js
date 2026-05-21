@@ -250,6 +250,60 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
+              isBlog={false}
+              title="SkanEat — Restaurant Ordering Platform"
+              description="Founded in 2022. End-to-end SaaS for restaurants: QR Code instant ordering, customizable menus, real-time kitchen tracking, Stripe/Apple Pay/Google Pay, digital receipts, reviews, and staff dashboards. Reduces errors and speeds up service without extra hardware."
+              demoLink="https://www.skaneat.com"
+              hours="1850"
+              technologies={[
+                "React",
+                "Angular",
+                "Node.js",
+                "Typescript",
+                "Firebase",
+                "API"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1566073771259-27a2b9c2119b?w=600&q=80"
+              isBlog={false}
+              title="Skaldas — Hospitality Digital Suite"
+              description="Founded in 2025. Two web products for tourism professionals: Skaldas Welcome (QR/NFC digital guest guides, Wi-Fi, recommendations for short-term rentals) and Skaldas CleanTrack (housekeeping QR workflows and real-time room status for independent hotels). 100% browser-based, no app install."
+              demoLink="https://www.skaldas.com"
+              hours="720"
+              technologies={[
+                "React",
+                "Node.js",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "MySQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80"
+              isBlog={false}
+              title="Valydr — Real Estate Buyer Qualification SaaS"
+              description="Founded in 2026. White-label buyer dossier platform for French estate agents: automated qualification, Tracfin/LCB-FT compliance traceability, branded PDF exports, identity checks, and audit logs. Built for agencies that need legal protection and faster signed sales."
+              demoLink="https://www.valydr.com"
+              hours="420"
+              technologies={[
+                "Next.js",
+                "React",
+                "Typescript",
+                "Tailwindcss",
+                "API",
+                "PostgreSQL"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80"
               isBlog={false}
               title="Open Scheduling — Fullstack"
